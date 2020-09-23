@@ -1,4 +1,29 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
 
-/*3) Escreva um programa que pergunte o dia, mês e ano do aniversário de uma pessoa e diga se a data é válida ou não. Caso não seja, diga o motivo. Suponha que todos os meses têm 31 dias e que estejamos no ano de 2018. Caso a data esteja correta imprima “Data válida”.
-*/
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>Data de aniversário</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <h2>Informe o dia, mês e ano do seu aniversário</h2>
+    <form action="resultado.php" method="POST" >
+      <label>Dia:</label>
+      <input type="number" name="dia" class="form-control">
+      <label>Mês:</label>
+      <input type="number" name="mes" class="form-control">
+      <label>Ano:</label>
+      <input type="number" name="ano" class="form-control">
+      <button name="button" class="btn btn-primary">Verificar</button>
+    </form>
+  </div>
+</body>
+
+</html>
+
+
